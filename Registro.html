@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+	<style type="text/css">
+		body{
+	background-color: #fdffe0;
+}
+		
+	</style>
+<head>
+	<meta charset="UTF-8">
+	<title>OneShopAll: Registrarse</title>
+	<link rel="stylesheet" type="text/css" href="css/style01.css">
+</head>
+<body id="login">
+	<form action="Iniciar.html" method="post">
+		<h1>Registrarse</h1>
+
+		<fielset id="logindatos">
+
+			<input type="image" src="img/user.png" class="img">
+
+			<input type="text" id="nombre" value="" pattern="^[a-zA-Z\s]+$" title="Solo se aceptan letras" class="control" placeholder="Nombre Completo" required /><br>
+
+			<input type="image" src="img/email.png" class="img">
+
+			<input type="tel" id="tel" value="" pattern="^[0-9]{4}-?[0-9]{4}+$" title="NombreCorreo@dominio" class="control" placeholder="Correo Electronico" required /><br>
+
+			<input type="image" src="img/pass.png" class="img">
+
+			<input type="password" id="password" value="" pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15})" title="Su contraseña sebe ser de 6 a 15 caracteres y deben de incluir una letra mayuscula, minuscula y un numero" class="control" placeholder="Contraseña" required /><br>
+
+			<input type="image" src="img/sexo.png" class="img">
+
+			<input type="text" list="sexo" value="" pattern="^[a-zA-Z\s]+$" title="solo acepto letras" class="control" placeholder="Sexo" required /></input>
+			<datalist id="sexo">
+			<option value="Masculino">Masculino</option>
+			<option value="Femenino">Femenino</option>
+			<option value="No definido">No definido</option>
+
+			</datalist>
+
+			<h3>Fecha de Nacimiento</h3><input type="date" name="apellido"></td></td></tr> <br>
+
+			<h3>Color Favorito</h3><input type="color" name="color"></td></tr> <br>
+
+			<br><input type="checkbox" checked name="acepto" class="terminos">
+
+			<p class="terminos"> Acepto terminos, condiciones y politica de privacidad</p>
+			<div class="social">
+				<a href="#">
+					<div class="fb">
+						<i class="fa fa-facebook-f"></i> &nbsp;<a href="Despues.html">Registrarme con Facebook</a>
+					</div>
+				</a>
+				<a href="#">
+					<div class="tw">
+						<i class="fa fa-twitter"></i> &nbsp;<a href="Despues.html">Registrarme con Twitter</a>
+					</div>
+				</a>
+			</div>
+			<br>
+			<button id="boton" type="submit" value="Registrarse">Registrarse</button>
+			<br>
+			<br>
+
+			<p>¿Ya tienes cuenta? <a href="Iniciar.html">Inicia Sesión</a></p>
+		</fieldset>
+	</form>
+<footer>
+<div id="inicio"><a href="prototipo.html">Devuelta al inicio</a></div>
+<br>
+<div id="footer">Derechos Reservados OneShopAll®. 2020</div>
+</footer>
+</body>
+</html>
